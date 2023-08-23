@@ -1,0 +1,19 @@
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;}
+
+  .filter__label {
+    font-size: 16px;
+  }
+
+  .filter__input {
+    border: 1.5px solid #78909c;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 16px;
+  }
