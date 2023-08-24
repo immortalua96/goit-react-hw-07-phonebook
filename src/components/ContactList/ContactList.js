@@ -9,10 +9,11 @@ const ContactList = () => {
   const filteredContacts = useSelector(selectFilteredContacts);
 
   return (
-    <ul className="contactList">
-      {filteredContacts.length
+    <>
+      {filteredContacts.length>0
         ? filteredContacts.map(({ id, name, number }) => (
-            <li className="contactList__item" key={id}>
+          <ul className="contactList" key={id}>
+            <li className="contactList__item"  key={id}>
               <div>
                 {name}: <span className="contactList__number">{number}</span>
               </div>
@@ -26,9 +27,10 @@ const ContactList = () => {
                 Delete
               </button>
             </li>
+            </ul>
           ))
         : "contacts is none"}
-    </ul>
+    </>
   );
 };
 
