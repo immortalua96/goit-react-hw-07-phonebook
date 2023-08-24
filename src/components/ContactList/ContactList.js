@@ -29,7 +29,7 @@ const ContactList = () => {
             </li>
             </ul>
           ))
-        : "contacts is none"}
+        :<h1>"contacts is none"</h1>}
     </>
   );
 };
