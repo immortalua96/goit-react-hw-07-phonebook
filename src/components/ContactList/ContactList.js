@@ -27,7 +27,7 @@ const ContactList = () => {
               </button>
             </li>
           ))
-        : null}
+        : "contacts is none"}
     </ul>
   );
 };

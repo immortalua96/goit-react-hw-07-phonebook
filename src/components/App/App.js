@@ -32,11 +32,8 @@ export default function App() {
         <Container>
           <Title>Contacts</Title>
           <Filter />
-          {isLoading && !error
-            ? Loading.standard({
-                backgroundColor: 'transparent',
-              })
-            : Loading.remove()}
+          {isLoading ? Loading.pulse({ svgSize: '240px' }) : Loading.remove()}
+        
           <ContactList />
         </Container>
       </Section>
