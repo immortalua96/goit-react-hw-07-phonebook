@@ -32,8 +32,8 @@ export default function App() {
         <Container>
           <Title>Contacts</Title>
           <Filter />
-          {isLoading ? Loading.pulse({ svgSize: '240px' }) : Loading.remove()}
-        
+          {isLoading && error ? Loading.pulse({ svgSize: '240px' }) : Loading.remove()}
+          
           <ContactList />
         </Container>
       </Section>
